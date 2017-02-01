@@ -14,9 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     var originalRect: CGRect!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        becomeFirstResponder()
         // Do any additional setup after loading the view, typically from a nib.
         
         originalRect = imageView.frame
@@ -33,11 +34,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if motion == UIEventSubtype.motionShake {
+            outputLabel.text = "Shaking things up!"
+            imageView.transform = CGAffineTransform(rotationAngle: 0)
+            imageView.frame = originalRect
+        }
+    }
     
     @IBAction func foundTap(_ sender: UITapGestureRecognizer) {
-        outputLabel.text = "Tapped"
         let location: CGPoint = sender.location(in: view)
         print("You tapped at the coordinates: x - \(location.x), y - \(location.y)")
+        outputLabel.text = String("Tapped at x: \(location.x), y: \(location.y)")
+
     }
    
     
@@ -64,6 +73,7 @@ class ViewController: UIViewController {
 
         
     }
+    
     
     
 
