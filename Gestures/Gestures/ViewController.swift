@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     
     @IBAction func foundTap(_ sender: UITapGestureRecognizer) {
         outputLabel.text = "Tapped"
-        var location: CGPoint = sender.location(in: view)
+        let location: CGPoint = sender.location(in: view)
         print("You tapped at the coordinates: x - \(location.x), y - \(location.y)")
     }
    
@@ -57,6 +57,12 @@ class ViewController: UIViewController {
     
     
     @IBAction func foundRotation(_ sender: UIRotationGestureRecognizer) {
+        let rotation: CGFloat = sender.rotation
+        let feedback: String = String(format: "Rotated, Radians: %1.2f, Velocity: %1.2f",Float(sender.rotation), Float(sender.velocity))
+        outputLabel.text = feedback
+        imageView.transform = CGAffineTransform(rotationAngle: rotation)
+
+        
     }
     
     
