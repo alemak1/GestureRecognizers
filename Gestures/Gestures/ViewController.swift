@@ -20,12 +20,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         originalRect = imageView.frame
-        
-        var tempImageView: UIImageView
-        tempImageView = UIImageView(image: UIImage(named: "flower.png"))
-        tempImageView.frame = originalRect
-        view.addSubview(tempImageView)
-        self.imageView = tempImageView
+//        
+//        var tempImageView: UIImageView
+//        tempImageView = UIImageView(image: UIImage(named: "flower.png"))
+//        tempImageView.frame = originalRect
+//        view.addSubview(tempImageView)
+//        self.imageView = tempImageView
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     
     @IBAction func foundPinch(_ sender: UIPinchGestureRecognizer) {
         var feedback: String
-        var scale: CGFloat = sender.scale
+        let scale: CGFloat = sender.scale
         imageView.transform = CGAffineTransform(rotationAngle: 0.0)
         feedback = String(format: "Pinched, Scale: %1.2f, Velocity: %1.2f", Float(sender.scale),Float(sender.velocity))
         outputLabel.text = feedback
