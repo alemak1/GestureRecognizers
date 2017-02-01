@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,74 +28,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QlH-sf-dTj" userLabel="SwipeMeView">
-                                <rect key="frame" x="173" y="73" width="164" height="83"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Swipe Me!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ib-GR-DFA">
-                                        <rect key="frame" x="61" y="31" width="80" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstItem="2ib-GR-DFA" firstAttribute="centerX" secondItem="QlH-sf-dTj" secondAttribute="centerX" id="kXV-rm-GHN"/>
-                                    <constraint firstItem="2ib-GR-DFA" firstAttribute="centerY" secondItem="QlH-sf-dTj" secondAttribute="centerY" id="knH-CG-OjV"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="3X1-xn-m46" appends="YES" id="09g-AD-QWx"/>
-                                </connections>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Rc-hV-fvg" userLabel="PinchMeView">
-                                <rect key="frame" x="33" y="196" width="304" height="130"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pinch Me!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfP-bv-NON">
-                                        <rect key="frame" x="122" y="55" width="76" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="0.91165058720000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstItem="dfP-bv-NON" firstAttribute="centerY" secondItem="7Rc-hV-fvg" secondAttribute="centerY" id="JUu-nB-Ilw"/>
-                                    <constraint firstItem="dfP-bv-NON" firstAttribute="centerX" secondItem="7Rc-hV-fvg" secondAttribute="centerX" id="lUr-Nd-dDV"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Uuq-wy-YSX" appends="YES" id="7Hz-cX-VaS"/>
-                                </connections>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wOU-lj-7Ch" userLabel="RotateMeView">
-                                <rect key="frame" x="33" y="363" width="304" height="134"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Rotate Me!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPo-u2-rsf">
-                                        <rect key="frame" x="106" y="62" width="83" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.78782180639999999" green="1" blue="0.41108909259999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstItem="fPo-u2-rsf" firstAttribute="centerY" secondItem="wOU-lj-7Ch" secondAttribute="centerY" id="5FW-LC-g87"/>
-                                    <constraint firstItem="fPo-u2-rsf" firstAttribute="centerX" secondItem="wOU-lj-7Ch" secondAttribute="centerX" id="Bq2-ob-yKc"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="F39-iu-Ed5" appends="YES" id="SD4-D1-klX"/>
-                                </connections>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iem-Uw-iUe">
-                                <rect key="frame" x="67" y="519" width="240" height="128"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pgx-uy-l5W" userLabel="TapMeView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pgx-uy-l5W" userLabel="TapMeView">
                                 <rect key="frame" x="33" y="73" width="93" height="83"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tap Me!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XlS-bd-BDR">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap Me!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XlS-bd-BDR">
                                         <rect key="frame" x="25" y="31" width="62" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -102,33 +41,93 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.26063069709999998" blue="0.38069505990000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstItem="XlS-bd-BDR" firstAttribute="centerY" secondItem="pgx-uy-l5W" secondAttribute="centerY" id="A3H-dH-JAh"/>
-                                    <constraint firstItem="XlS-bd-BDR" firstAttribute="centerX" secondItem="pgx-uy-l5W" secondAttribute="centerX" id="AeD-hN-Huf"/>
-                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="63N-th-3xQ" appends="YES" id="9Z7-5f-jOk"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QlH-sf-dTj" userLabel="SwipeMeView">
+                                <rect key="frame" x="173" y="73" width="164" height="83"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Swipe Me!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ib-GR-DFA">
+                                        <rect key="frame" x="34" y="31" width="107" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="107" id="voN-8r-hCh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3X1-xn-m46" appends="YES" id="09g-AD-QWx"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Rc-hV-fvg" userLabel="PinchMeView">
+                                <rect key="frame" x="33" y="196" width="304" height="96"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pinch Me!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfP-bv-NON">
+                                        <rect key="frame" x="104" y="38" width="76" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.91165058720000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Uuq-wy-YSX" appends="YES" id="7Hz-cX-VaS"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOU-lj-7Ch" userLabel="RotateMeView">
+                                <rect key="frame" x="33" y="310" width="304" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rotate Me!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPo-u2-rsf">
+                                        <rect key="frame" x="101" y="41" width="83" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.78782180639999999" green="1" blue="0.41108909259999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="F39-iu-Ed5" appends="YES" id="SD4-D1-klX"/>
+                                </connections>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower" translatesAutoresizingMaskIntoConstraints="NO" id="iem-Uw-iUe">
+                                <rect key="frame" x="33" y="483" width="289" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="df8-Rd-sRl"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wOU-lj-7Ch" firstAttribute="centerX" secondItem="7Rc-hV-fvg" secondAttribute="centerX" id="18n-UH-WKM"/>
-                            <constraint firstItem="wOU-lj-7Ch" firstAttribute="height" secondItem="7Rc-hV-fvg" secondAttribute="height" id="6LJ-MV-394"/>
-                            <constraint firstItem="iem-Uw-iUe" firstAttribute="top" relation="greaterThanOrEqual" secondItem="wOU-lj-7Ch" secondAttribute="bottom" constant="10" id="84q-oI-tlc"/>
-                            <constraint firstItem="3az-VB-SNN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="ALC-Lo-ur8"/>
-                            <constraint firstItem="QlH-sf-dTj" firstAttribute="leading" secondItem="7Rc-hV-fvg" secondAttribute="leading" id="CjV-cg-sF0"/>
-                            <constraint firstItem="wOU-lj-7Ch" firstAttribute="width" secondItem="7Rc-hV-fvg" secondAttribute="width" id="Cl8-ww-kG4"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iem-Uw-iUe" secondAttribute="bottom" constant="10" id="EOp-Cg-F4d"/>
-                            <constraint firstItem="pgx-uy-l5W" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3az-VB-SNN" secondAttribute="bottom" constant="10" id="RPF-4M-78F"/>
-                            <constraint firstItem="QlH-sf-dTj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3az-VB-SNN" secondAttribute="bottom" constant="10" id="bk2-oG-TqZ"/>
-                            <constraint firstItem="7Rc-hV-fvg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="pgx-uy-l5W" secondAttribute="bottom" constant="10" id="c1c-Q1-9Pm"/>
-                            <constraint firstItem="QlH-sf-dTj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pgx-uy-l5W" secondAttribute="trailing" constant="10" id="dof-EW-j7s"/>
-                            <constraint firstItem="3az-VB-SNN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gcf-gz-8ZW"/>
-                            <constraint firstItem="7Rc-hV-fvg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="QlH-sf-dTj" secondAttribute="bottom" constant="10" id="pRy-0M-H9K"/>
-                            <constraint firstItem="wOU-lj-7Ch" firstAttribute="leading" secondItem="7Rc-hV-fvg" secondAttribute="leading" id="vgn-6V-hd8"/>
-                            <constraint firstItem="iem-Uw-iUe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w67-AI-XM1"/>
-                            <constraint firstItem="pgx-uy-l5W" firstAttribute="leading" secondItem="7Rc-hV-fvg" secondAttribute="leading" id="xLm-YO-C0D"/>
+                            <constraint firstItem="pgx-uy-l5W" firstAttribute="bottom" secondItem="QlH-sf-dTj" secondAttribute="bottom" id="9gE-b0-Dxn"/>
+                            <constraint firstItem="iem-Uw-iUe" firstAttribute="top" secondItem="wOU-lj-7Ch" secondAttribute="bottom" constant="33" id="BhL-17-hUM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iem-Uw-iUe" secondAttribute="bottom" constant="28" id="FVP-U8-RRg"/>
+                            <constraint firstItem="QlH-sf-dTj" firstAttribute="leading" secondItem="pgx-uy-l5W" secondAttribute="trailing" constant="47" id="JpP-nm-5fc"/>
+                            <constraint firstItem="wOU-lj-7Ch" firstAttribute="top" secondItem="7Rc-hV-fvg" secondAttribute="bottom" constant="18" id="SbR-sU-OfL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iem-Uw-iUe" secondAttribute="trailing" constant="37" id="U0E-5I-ID9"/>
+                            <constraint firstItem="7Rc-hV-fvg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="196" id="erC-HY-1in"/>
+                            <constraint firstItem="7Rc-hV-fvg" firstAttribute="top" secondItem="pgx-uy-l5W" secondAttribute="bottom" constant="40" id="f6A-1h-Ytd"/>
+                            <constraint firstItem="7Rc-hV-fvg" firstAttribute="leading" secondItem="wOU-lj-7Ch" secondAttribute="leading" id="fWl-sf-Xnt"/>
+                            <constraint firstItem="QlH-sf-dTj" firstAttribute="trailing" secondItem="7Rc-hV-fvg" secondAttribute="trailing" id="fsm-RR-iWX"/>
+                            <constraint firstItem="3az-VB-SNN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gq4-NL-2wz"/>
+                            <constraint firstItem="QlH-sf-dTj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="173" id="h8t-49-Lb6"/>
+                            <constraint firstItem="3az-VB-SNN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="kg7-iA-zeF"/>
+                            <constraint firstItem="QlH-sf-dTj" firstAttribute="top" secondItem="3az-VB-SNN" secondAttribute="bottom" constant="22" id="l9A-u5-K3r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QlH-sf-dTj" secondAttribute="trailing" constant="22" id="nHy-Rs-9KV"/>
+                            <constraint firstItem="pgx-uy-l5W" firstAttribute="top" secondItem="QlH-sf-dTj" secondAttribute="top" id="nf2-YX-qP7"/>
+                            <constraint firstItem="7Rc-hV-fvg" firstAttribute="trailing" secondItem="wOU-lj-7Ch" secondAttribute="trailing" id="slc-Sl-nAa"/>
+                            <constraint firstItem="pgx-uy-l5W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="tBG-SY-5VI"/>
+                            <constraint firstItem="wOU-lj-7Ch" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="310" id="tck-h7-7Bz"/>
+                            <constraint firstItem="pgx-uy-l5W" firstAttribute="leading" secondItem="7Rc-hV-fvg" secondAttribute="leading" id="zPf-i5-omj"/>
+                            <constraint firstItem="wOU-lj-7Ch" firstAttribute="leading" secondItem="iem-Uw-iUe" secondAttribute="leading" id="zfF-yw-J1Q"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -138,7 +137,10 @@
                 <pinchGestureRecognizer id="Uuq-wy-YSX"/>
                 <rotationGestureRecognizer id="F39-iu-Ed5"/>
             </objects>
-            <point key="canvasLocation" x="-1316" y="199"/>
+            <point key="canvasLocation" x="-1316" y="198.35082458770617"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="flower" width="350" height="325"/>
+    </resources>
 </document>
